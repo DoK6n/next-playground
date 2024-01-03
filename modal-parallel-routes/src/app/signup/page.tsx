@@ -1,5 +1,10 @@
-import { SignupModal } from '~/components/modal'
+'use client'
+
+import { useRouter } from 'next/navigation'
+import Home from '~/components/home/home'
 
 export default function SignupPage() {
-  return <SignupModal />
+  const router = useRouter()
+  router.replace('/signup')
+  return <Home />
 }
